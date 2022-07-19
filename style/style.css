@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+/*paleta de colores https://colorhunt.co/palette/fcf8e894b49fecb390df7861*/
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-color: #FCF8E8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+header{
+    background-color: #94B49F;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+li{
+    padding: 10px 15px;
+    display: inline-block; 
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    color: #0c056d;
+}
+
+h1{
+    padding: 20px 20px;
+    color: #0c056d;
+}
+
+p{
+    font-size: larger;
+}
+
+/*footer*/
+footer{
+    padding: 25px;
+    left: 0;
+    bottom: 0;
+    background-color: #94B49F;
+    text-align: center;
+    font-size: smaller;
+}
+.social{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* estos flex los usaba antes del agregado de grips al proyecto y no los queria eliminar aun
+.row{
+    padding: 35px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.videos{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}*/
+
+/*inicio.html*/
+.imagen-inicio{
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    border: 1px;
+    border-radius: 20px;
+}
+
+.texto-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.video-segu{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.video-prev {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padre-inicio{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin: 20px;
+    justify-items:center;
+    align-items: center;
+    grid-template-areas: 
+    "imagen-inicio texto-inicio"
+    "video-prev video-segu";
+}
+
+
+
+
+
+
+/* contacto.html */
+.contacto{
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    padding: 20px 20px;
+    color: #0c056d;
+    font-size: 200%;
+}
+
+#nombreApellido{
+    grid-area: nombreApellido;
+}
+#email{
+    grid-area: email;
+}
+#telefono{
+    grid-area: telefono;
+}
+
+#motivo{
+    grid-area: motivo;
+
+}
+#mensaje{
+    grid-area: mensaje;
+}
+
+#boton{
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.form-p{
+    padding: 0 200px 0 200px;
+    text-align: center;
+}
+
+label{
+    color: #0c056d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.formpadre{
+    display: grid;
+    margin: 50px;
+    gap: 50px;
+    grid-template-areas: 
+        " nombreApellido email   telefono "
+        " motivo         motivo  motivo"
+        " mensaje        mensaje mensaje"
+        " boton          boton   boton"
+        ;
+        
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    ;
+}
+
+button{
+    float: right;
+    background-color:#0c056d;
+    width: auto;
+    margin: auto;
+    border: 10px double #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+/*Celulares*/
+@media(max-width:640px){
+    #boton{
+        grid-area: boton;
+    }
+    .padre-inicio{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 1px;
+        margin: 10px;
+        justify-items:center;
+        align-items: center;
+        grid-template-areas: 
+        "imagen-inicio"
+        "texto-inicio"
+        "video-prev"
+        "video-segu";
+    }
+    header{
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form-p{
+        padding: 0 0 0 0;
+    }
+
+    .formpadre{
+        display: grid;
+        margin: 50px;
+        gap: 50px;
+        grid-template-areas: 
+            "nombreApellido"
+            "email"
+            "telefono"
+            "motivo"
+            "mensaje"
+            "boton"
+            ;
+            
+        grid-template-rows: 1fr; 
+        grid-template-columns: 1fr;
+        ;
+    }
+}
+
+
+/*Tablets*/
+@media(min-width:640px) and (max-width: 1024px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .form-p{
+        padding: 0 0 0 0;
+    }
+
+    .padre-inicio{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 1px;
+        margin: 10px;
+        justify-items:center;
+        align-items: center;
+        grid-template-areas: 
+        "texto-inicio"
+        "imagen-inicio"
+        "video-prev"
+        "video-segu";
+    }
+
+
+}

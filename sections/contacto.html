@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--Navegacion-->
+        <img src="../images/logo header.png" width="188" height="53" alt="Logo de servicios para ART" id="logo"/>
+        <nav>
+          <ul>
+            <li>
+              <a href="../index.html">Inicio  </a>
+            </li>
+            <li>
+              <a href="./galeria.html">Galeria</a>
+            </li>
+            <li>
+              <a href="./historia.html">Historia</a>
+            </li>
+            <li>
+              <a href="./servicios.html">Servicios</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+    
+      </header>
+    
+
+    <!-- formulario de contacto -->
+	<section>
+		<article class="contacto">
+            <h2>Contactanos</h2>
+            <p class="form-p">
+                Comunicate con nosotros por cualquiera de nuestras vías y te acercaremos la mejor propuesta para tus necesidades. ¿Preguntas o dudas? ¡Estamos para ayudarte!
+            </p>
+
+			<form action="#" class="formpadre">
+
+
+        <div  id="nombreApellido">
+          <label for="nombreApellido" >Nombre Completo:</label>
+          <input type="nombreApellido" placeholder="Nombre y Apellido" name="nombreApellido" class="form-control">
+        </div>
+
+
+        <div id="email">
+          <label for="email" >Email:</label>
+				  <input type="email" placeholder="ejemplo@email.com" name="email"class="form-control">
+        </div>
+				
+				<div id="telefono">
+          <label for="telefono">Telefono:</label>
+					<input type="telefono" placeholder="+54 (11) 1234-5678" name="telefono"class="form-control">
+        </div >
+
+        <div id="motivo">
+          <label>Motivo de consulta:</label>
+          <select name="motivo" class="form-control"> 
+              <option value="1">Alta en cuenta</option>
+              <option value="2">RRHH</option>
+              <option value="3">Cotización</option>
+              <option value="4">Otros</option>
+          </select>
+        </div>
+				
+        <div id="mensaje">
+          <label for="mensaje"> Tu mensaje:</label>
+				  <textarea placeholder="Contanos tus necesidades o consultas y en breve nos comunicaremos con vos." class="form-control" required style="height: 200px;"></textarea>
+				
+        </div>
+              
+        <button id="boton">Enviar</button>
+				      
+
+			</form>
+
+		</article>
+	</section>
+
+    <!-- pie de pagina -->
+    <footer id="footer">
+        <h3>© Copyright 2022 - Servicios Para ART</h3>
+        <div class="row">
+        <img src="../images/icons8-facebook-50.png" alt="Icono de facebook">
+        <img src="../images/icons8-linkedin-50.png" alt="Icono de linkedin">
+        <img src="../images/icons8-angry-face-meme-50.png" alt="Icono de meme cara enojada">
+        </div>
+    </footer>
+    
+</body>
+</html>
