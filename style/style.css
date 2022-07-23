@@ -227,6 +227,15 @@ button{
 
 /*Celulares*/
 @media(max-width:640px){
+    .imagen-inicio{
+        height: 300px;
+        width: 300px;
+    }
+    .video-youtube{
+        width: auto;
+        height: auto;
+    }
+
     #boton{
         grid-area: boton;
     }
