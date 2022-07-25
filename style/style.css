@@ -71,7 +71,6 @@ footer{
     border-style: none;
     border: 1px;
     border-radius: 20px;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .imagen-inicio:hover{
     transform: scale(1.2);
