@@ -56,13 +56,6 @@ footer{
     text-align: center;
     font-size: smaller;
 }
-.social{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 .imagen-inicio{
     padding: 15px;
