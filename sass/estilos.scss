@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import "fuentes";
+@import "generales";
+@import "mediaqueries";
 
 /*paleta de colores https://colorhunt.co/palette/fcf8e894b49fecb390df7861*/
 
@@ -105,11 +107,6 @@ footer{
     "video-prev video-segu";
 }
 
-
-
-
-
-
 /* contacto.html */
 .contacto{
     padding: 20px;
@@ -207,7 +204,6 @@ label{
     background: linear-gradient(#476e9e, rgb(120, 146, 194)); 
 }
 
-
 /*Celulares*/
 @media(max-width:640px){
     .imagen-inicio{
@@ -218,7 +214,7 @@ label{
         width: auto;
         height: auto;
     }
-
+  
     #boton{
         grid-area: boton;
     }
@@ -247,7 +243,7 @@ label{
     .form-p{
         padding: 0 0 0 0;
     }
-
+  
     .formpadre{
         display: grid;
         margin: 50px;
@@ -265,20 +261,19 @@ label{
         grid-template-columns: 1fr;
         ;
     }
-}
-
-
-/*Tablets*/
-@media(min-width:640px) and (max-width: 1024px){
-
+  }
+  
+  /*Tablets*/
+  @media(min-width:640px) and (max-width: 1024px){
+  
     header{
         flex-direction: column;
     }
-
+  
     .form-p{
         padding: 0 0 0 0;
     }
-
+  
     .padre-inicio{
         display: grid;
         grid-template-columns: auto;
@@ -293,6 +288,6 @@ label{
         "video-prev"
         "video-segu";
     }
-
-
-}
+  
+  
+  }
